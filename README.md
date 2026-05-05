@@ -78,7 +78,7 @@ MIT
     ERC20Capped(2_000_000 * 10 ** decimals())
     Ownable(msg.sender)
 {
-                _mint(msg.sender, 1_000_000 * 10 ** decimals());
+            `_mint(msg.sender, 1_000_000 * 10 ** decimals());
 }
 
             function mint(address to, uint256 amount) external onlyOwner {
