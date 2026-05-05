@@ -77,16 +77,17 @@ MIT
     ERC20("MyPortfolioToken", "MPT")
     ERC20Capped(2_000_000 * 10 ** decimals())
     Ownable(msg.sender)
-{
+            {
             `_mint(msg.sender, 1_000_000 * 10 ** decimals());
-}
+            }
 
             function mint(address to, uint256 amount) external onlyOwner {
     _mint(to, amount);
-}
+            }
 
             function burn(uint256 amount) external {
                 _burn(msg.sender, amount);
-}
+            }
 
-}
+            }
+            
