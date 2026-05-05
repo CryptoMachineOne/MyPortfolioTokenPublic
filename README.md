@@ -66,13 +66,14 @@ MIT
 
             // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.24;
+            pragma solidity ^0.8.24;
 
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol"; import "@openzeppelin/contracts/access/Ownable.sol";
+            import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
+            import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract MyPortfolioToken is ERC20Capped, Ownable {
+            contract MyPortfolioToken is ERC20Capped, Ownable {
 
-constructor()
+            constructor()
     ERC20("MyPortfolioToken", "MPT")
     ERC20Capped(2_000_000 * 10 ** decimals())
     Ownable(msg.sender)
